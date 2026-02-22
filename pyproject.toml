@@ -1,0 +1,27 @@
+[project]
+name = "classical_ml_system"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Lakhan", email = "lakhan4797@gmail.com"},
+]
+dependencies = ["numpy>=2.4.2", "pandas>=3.0.1"]
+requires-python = ">=3.13"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ipykernel>=6.29.5",
+]
+
+[tool.pdm.build]
+includes = ["src", "shared"]
